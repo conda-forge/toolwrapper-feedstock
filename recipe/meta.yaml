@@ -1,18 +1,18 @@
 {% set name = "toolwrapper" %}
-{% set version = "1.0.0" %}
+{% set version = "2.0.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d009dbe0f05bd15718fc8fca324207847c4a37470053342a10ce33fb25780723
+  sha256: a84649d439f649413d9c7b0b5f75ffd11b20b124e32408fd64380145f6bc34d4
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:

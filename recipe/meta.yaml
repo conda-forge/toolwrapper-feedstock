@@ -1,5 +1,5 @@
 {% set name = "toolwrapper" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a84649d439f649413d9c7b0b5f75ffd11b20b124e32408fd64380145f6bc34d4
+  sha256: 660e8ea119008b4dc493386bcf7121325347a0765c8f11af2c4d0ea037e65e8f
 
 build:
   number: 0
